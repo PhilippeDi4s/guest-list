@@ -1,5 +1,7 @@
 import { findAllGuests } from "@/src/lib/queries/guests";
 import { ErrorMessage } from "../../ErrorMessage";
+import { TrashIcon } from "lucide-react";
+import { DeleteGuestButton } from "../DeleteGuestButton";
 
 export async function ListGuests() {
   let guests;
@@ -31,19 +33,25 @@ export async function ListGuests() {
       <table className="font-caudex w-full min-w-[20rem] text-center">
         <thead>
           <tr>
+            <th className="p-4!">id</th>
             <th className="p-4!">Nome</th>
             <th className="p-4!">Data Confirmação</th>
+            <th className="p-4!">Deletar</th>
           </tr>
         </thead>
 
         <tbody>
           {guests.map((guest) => (
             <tr key={guest.id} className=" even:bg-[#eedada]">
+              <td className="p-4!">{guest.id}</td>
               <td className="p-4!">{guest.name}</td>
               <td className="p-4!">
                 {guest.confirmedAt
                   ? guest.confirmedAt.toLocaleDateString()
                   : "Não registrada"}
+              </td>
+              <td>
+                <DeleteGuestButton guestId={guest.id} />
               </td>
             </tr>
           ))}

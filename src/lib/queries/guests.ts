@@ -8,7 +8,7 @@ export const findAllGuests = async () => {
 
   cacheTag("guests");
 
-  const response: guestResponseDto[]= await getDb().select().from(guests)
+  const response: guestResponseDto[] = await getDb().select().from(guests);
 
   return response;
 };
