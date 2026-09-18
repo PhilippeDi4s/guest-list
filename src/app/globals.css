@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --foreground: #2b2b2b;
+  --pink-900: #9b0532;
+  --pink-800: #b80137;
+  --pink-600: rgb(194, 1, 58);
+  --pink-700: #a30031;
+  --pink-200: #ffd8d9;
+  --white: #ffebeb;
+  --orange: #ff741f;
+  --gray: #bdbdbd;
+}
+
+@theme inline {
+  --color-background: var(--pink-200);
+  --color-foreground: var(--foreground);
+  --color-pink-900: var(--pink-900);
+  --color-pink-800: var(--pink-800);
+  --color-pink-700: var(--pink-700);
+  --color-pink-600: var(--pink-600);
+  --color-pink-200: var(--pink-200);
+  --color-white: var(--white);
+  --color-orange: var(--orange);
+  --color-gray: var(--gray);
+
+  --font-caudex: var(--font-caudex);
+  --font-brittany: var(--font-brittany);
+  --font-cocomat: var(--font-cocomat);
+  --font-farmhouse: var(--font-farmhouse);
+  --font-poppins: var(--font-poppins);
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

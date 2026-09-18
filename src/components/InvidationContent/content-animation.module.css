@@ -1,0 +1,12 @@
+.content {
+  animation: contentOpacityAnimation 3s ease-in 4s both;
+}
+
+@keyframes contentOpacityAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

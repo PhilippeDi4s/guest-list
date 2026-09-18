@@ -1,0 +1,21 @@
+.stripe {
+  transform: scaleY(0);
+  transform-origin: bottom;
+  opacity: 0;
+  animation: reveal-stripe 0.5s ease-out forwards;
+}
+
+@keyframes reveal-stripe {
+  to {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stripe {
+    animation: none;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
