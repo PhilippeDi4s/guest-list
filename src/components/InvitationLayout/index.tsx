@@ -10,7 +10,7 @@ const colors = [
 
 export function InvitationLayout({ children }: { children: React.ReactNode }) {
   return (
-    <section className="relative min-h-screen w-full flex items-center justify-center lg:w-50%">
+    <section className="overflow-hidden relative min-h-screen w-full flex items-center justify-center lg:w-50%">
       <div className="absolute inset-0 -z-10 grid grid-cols-5">
         {colors.map((color, i) => (
           <div
@@ -20,7 +20,7 @@ export function InvitationLayout({ children }: { children: React.ReactNode }) {
           />
         ))}
       </div>
-      {children}
+      <div className="w-full flex flex-col items-center justify-center">{children}</div>
     </section>
   );
 }
