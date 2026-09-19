@@ -2,7 +2,7 @@ import Image from "next/image";
 import { AnimatedOrangeBorder } from "../AnimatedOrangeBorder";
 import style from "./content-animation.module.css";
 import mirrorballStyles from "./mirrorballs.module.css";
-import { ArrowDownIcon } from "lucide-react";
+import { MobileScrollButton } from "./MobileScrollButton";
 
 export function InvidationContent() {
   return (
@@ -122,7 +122,7 @@ export function InvidationContent() {
               abaixo
             </span>
 
-            <ArrowDownIcon size={20} />
+            <MobileScrollButton />
           </div>
 
           <span className="hidden md:block font-bold">

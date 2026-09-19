@@ -6,7 +6,7 @@ import {
   type FormState,
 } from "@/src/app/actions/send-form-action";
 import { User, Send, AlertCircleIcon } from "lucide-react";
-import { useActionState, useEffect, useState } from "react";
+import { useActionState, useEffect } from "react";
 
 const initialState: FormState = {
   success: false,
@@ -31,7 +31,10 @@ export function FormSection() {
     showMessage.error(state.message);
   }, [state]);
   return (
-    <section className="flex bg-white min-h-[80vh] w-full justify-center px-4 lg:min-h-screen lg:w-[50%]">
+    <section
+      id="confirmation-form"
+      className="flex bg-white min-h-[80vh] w-full justify-center px-4 lg:min-h-screen lg:w-[50%]"
+    >
       <div className="w-full max-w-md rounded-3x p-8! mt-10! lg:mt-0">
         <h2 className="mb-6 text-center text-3xl text-pink-800 font-cocomat">
           Confirme sua presença!

@@ -10,3 +10,40 @@
     opacity: 1;
   }
 }
+
+.mobileScrollButton {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.bouncingArrow {
+  animation: bounce-arrow 1.1s ease-in-out infinite;
+}
+
+@keyframes bounce-arrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(7px);
+  }
+}
+
+@media (min-width: 768px) {
+  .mobileScrollButton {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bouncingArrow {
+    animation: none;
+  }
+}
