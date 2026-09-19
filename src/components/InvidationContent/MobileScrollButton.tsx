@@ -18,7 +18,7 @@ export function MobileScrollButton() {
       className={styles.mobileScrollButton}
       aria-label="Ir para o formulário de confirmação"
     >
-      <ArrowDownIcon className={styles.bouncingArrow} size={20} />
+      <ArrowDownIcon className={styles.bouncingArrow} size={40} />
     </button>
   );
 }
