@@ -1,5 +1,5 @@
 .content {
-  animation: contentOpacityAnimation 3s ease-in 4s both;
+  animation: contentOpacityAnimation 3s ease-in 2s both;
 }
 
 @keyframes contentOpacityAnimation {
