@@ -53,7 +53,7 @@ export function FormSection() {
                 id="name"
                 name="name"
                 type="text"
-                placeholder="Digite seu nome"
+                placeholder="Digite seu nome e sobrenome"
                 className="w-full bg-transparent text-pink-900 placeholder:text-pink-300 focus:outline-none font-cocomat"
               />
             </div>
