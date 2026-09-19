@@ -116,7 +116,7 @@ export function InvidationContent() {
         </span>
 
         <div className="flex flex-col items-center justify-center text-[15px] md:text-[18px] font-cocomat">
-          <div className="flex flex-col items-center justify-center gap-3 md:hidden">
+          <div className="flex flex-col items-center justify-center gap-3 lg:hidden">
             <span className="font-bold leading-4 text-center">
               Confirme sua presença <br />
               abaixo
@@ -125,7 +125,7 @@ export function InvidationContent() {
             <MobileScrollButton />
           </div>
 
-          <span className="hidden md:block font-bold">
+          <span className="hidden lg:block font-bold">
             Confirme sua presença ao lado
           </span>
         </div>

@@ -1,5 +1,5 @@
 .content {
-  animation: contentOpacityAnimation 3s ease-in 2s both;
+  animation: contentOpacityAnimation 3s ease-in 4.5s both;
 }
 
 @keyframes contentOpacityAnimation {
@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .mobileScrollButton {
     display: none;
   }

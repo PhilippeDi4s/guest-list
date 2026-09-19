@@ -7,13 +7,13 @@
 .background {
   fill-opacity: 1;
   clip-path: inset(100% 0 0 0) fill-box;
-  animation: fill-up 1.4s ease-out 3.5s forwards;
+  animation: fill-up 1.4s ease-out 4s forwards;
 }
 
 .path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
-  animation: draw-border 2.4s ease-out 1.1s forwards;
+  animation: draw-border 2s ease-out 1.1s forwards;
 }
 
 @keyframes draw-border {
